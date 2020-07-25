@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+</head>
+<body>
+	
+	<nav id="navbar">
+	</nav>
+
+	<main id="main">
+		<div id="bitty-description" class="center-content">
+			<h1>Bitty</h1>
+			<p>Bitty is a free, open-source project that helps you earn money with Bitcoin purchasing! Moreover, we are predicting an approximate BTC price, so now, using our services you can make a decision whether you should buy Bitcoin or not!</p>
+			<p>
+			Yes, most of people would say that predicting cryptocurrency value is impossible. But we have another point of view. We believe that using advanced forecasting models cryptocurrency can be predicted with great accuracy.
+			Check our <a href="#forecast">forecasting services</a> to confirm this!
+			</p>
+
+			<img src="img/btc-girl.jpg">
+
+			<h2>How does it work?</h2>
+			<p>
+				We are using advanced machine learning techniques(<i>esp. Gradient Boosting</i>) to predict bitcoin prices for you. 
+				All <a href="https://github.com/LinuxCoder/BtcPricePredictor" target=bitty-pred>code</a> is stored on our <a href="https://www.github.com/LinuxCoder/" target=github>github</a>. 
+			</p>
+
+			<h2>Can I use your data?</h2>
+			<p>
+				Yes, you definitely can! We've build our <a href="https://www.github.com/LinuxCoder/bitty" target=bitty-rest>REST API</a> for that.
+
+				<ul >
+					<li>
+						Get current btc value:
+						<div class="code">
+							<span>$ </span>
+							<span>curl api.bittie.ru/forecast/currencyValue</span>
+						</div>
+					</li>
+
+					<li>
+						Get current BTC price prediction:
+						<div class="code">
+							<span>$ </span>
+							<span>curl api.bittie.ru/forecast/prediction</span>
+						</div>
+					</li>
+
+
+					<li>
+						Get list of all BTC prices from given time:
+						<div class="code">
+							<span>$ </span>
+							<span>curl api.bittie.ru/forecast/listValuesFromTime?fromTime=FROM_TIME #default is 0</span>
+						</div> 
+					</li>
+
+					<li>
+						Get list of all predictions from given time:
+						<div class="code">
+							<span>$ </span>
+							<span>curl api.bittie.ru/forecast/listPredictionsFromTime?fromTime=FROM_TIME #default is 0</span>
+						</div>
+					</li>
+
+				</ul>
+			</p>
+
+			<h2>How can I support you?</h2>
+			<p>
+				Follow <a href="#about">us</a> on github!
+			</p>
+	</main>
+
+
+</body>
+</html>

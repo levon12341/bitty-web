@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forecast</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/forecast.js"></script>
+
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+</head>
+<body>
+	<script src="../js/load-resources.js">
+	</script>
+
+	<nav id="navbar">
+		
+	</nav>
+
+	<main id="main">
+		<div class="center-content">
+			<h1> Forecasting service </h1>
+
+			<label for="displayInterval">Display data from last: </label>
+			<select id="displayInterval" name="cars">
+  				<option value="day">Day</option>
+				<option value="3 days" selected="selected">3 Days</option>
+  				<option value="month">Month</option>
+			</select>
+
+			<canvas id="chart" width="100%"></canvas>
+			
+			<div id="chartCaption">
+				<span id="currentValueInformation"></span>
+				<br>
+				<span id="predictedValueInformation"></span>
+			</div>
+
+			<div class="warning">
+				<h1>Warning!</h1>
+				<strong>We're not responsible for every decision you've made!</strong>
+				<br>
+				<strong></strong>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

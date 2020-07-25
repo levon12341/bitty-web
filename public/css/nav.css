@@ -1,0 +1,41 @@
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #3c4448;
+}
+
+nav h1 {
+	line-height: 13px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+nav ul li {
+	list-style-type: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.nav-item {
+	border-bottom: 1px solid #3c4448;
+	transition: border-bottom .3s ease-in;
+}
+
+.nav-item:hover {
+	border-bottom: 1px solid white;
+}
